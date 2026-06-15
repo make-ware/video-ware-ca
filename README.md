@@ -1,8 +1,10 @@
 # VideoWare for Unraid
 
-Unraid Community Applications template for **VideoWare** — a self-hosted media upload and
-processing platform. Upload media, get fast previews (thumbnails & sprites), edit and
-render clips on a timeline, and run AI video analysis — all from one container.
+Unraid Community Applications template for **VideoWare** — a free, open-source, self-hosted
+video editor that runs in your browser. Upload media, get fast previews (thumbnails &
+sprites), edit and render clips on a timeline, and collaborate with other users on the same
+project in real time — all from one container. Optionally enable Video Intelligence to unlock
+universal search across your media (entirely optional).
 
 > **One container, one port, one data path.** This template runs the *monolithic*
 > VideoWare image, which bundles the web app, database, background worker, and its job
@@ -13,14 +15,16 @@ render clips on a timeline, and run AI video analysis — all from one container
 
 ## ✨ Features
 
+- 🌐 **Runs in your browser** — nothing to install on the client
+- 🤝 **Real-time collaboration** — multiple users editing the same project at once
 - 📤 **Upload media** with progress tracking and validation
 - ⚡ **Fast previews** — thumbnails and hover sprites generated in the background
 - ✂️ **Clip editing & timeline rendering** — compose and export final videos
-- 🤖 **AI video analysis** (optional, via Google Cloud) — object/face/person detection,
-  object tracking, shot-change detection, and speech transcription
 - 🎬 **FFmpeg-powered** transcoding and rendering, built in
+- 🔎 **Universal search** *(optional)* — enable Video Intelligence to find clips by what's actually in them
 - 💾 **Flexible storage** — local appdata by default, or any S3-compatible bucket
 - 🔐 **Built-in auth & API** via PocketBase, with a realtime database and admin UI
+- 🔓 **Free & open source**
 
 ## 📦 What's inside the container
 
@@ -95,10 +99,13 @@ Set **Storage Type** to `s3` and add these variables (Add another Path, Port, Va
 | `STORAGE_S3_ENDPOINT`         |          | Defaults to `https://s3.<region>.amazonaws.com`                |
 | `STORAGE_S3_FORCE_PATH_STYLE` |          | `true` for MinIO/Garage-style endpoints                        |
 
-### Optional: AI video analysis (Google Cloud)
+### Optional: Video Intelligence & universal search (Google Cloud)
 
-Add `GOOGLE_PROJECT_ID`, `GOOGLE_CLOUD_CREDENTIALS` (inline service-account JSON), and
-`GCS_BUCKET` to enable Video Intelligence features. See the project README for details.
+VideoWare is fully functional without this. If you want **universal search** — finding clips
+by what's actually in them (objects, faces, people, spoken words, shot changes) — add
+`GOOGLE_PROJECT_ID`, `GOOGLE_CLOUD_CREDENTIALS` (inline service-account JSON), and `GCS_BUCKET`
+to enable Google Cloud Video Intelligence. This is entirely optional. See the project README
+for details.
 
 ---
 

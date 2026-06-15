@@ -31,11 +31,17 @@ This template runs the **monolithic** image, which bundles all services in one c
   <WebUI>http://[IP]:[PORT:80]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/make-ware/video-ware/main/templates/video-ware.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/make-ware/video-ware/main/icon.png</Icon>
+  <Screenshot>https://raw.githubusercontent.com/make-ware/video-ware-ca/main/images/video-ware-1.png</Screenshot>
+  <Screenshot>https://raw.githubusercontent.com/make-ware/video-ware-ca/main/images/video-ware-2.png</Screenshot>
+  <Screenshot>https://raw.githubusercontent.com/make-ware/video-ware-ca/main/images/video-ware-3.png</Screenshot>
+  <Screenshot>https://raw.githubusercontent.com/make-ware/video-ware-ca/main/images/video-ware-4.png</Screenshot>
+  <Screenshot>https://raw.githubusercontent.com/make-ware/video-ware-ca/main/images/video-ware-5.png</Screenshot>
+  <Screenshot>https://raw.githubusercontent.com/make-ware/video-ware-ca/main/images/video-ware-6.png</Screenshot>
   <ExtraParams/>
   <PostArgs/>
   <DonateText/>
   <DonateLink/>
-  <Config Name="WebUI Port" Target="80" Default="8888" Mode="tcp" Description="Host port for the web app, PocketBase API and admin (proxied by nginx on container port 80)." Type="Port" Display="always" Required="true" Mask="false">8888</Config>
+  <Config Name="WebUI Port" Target="80" Default="6556" Mode="tcp" Description="Host port for the web app, PocketBase API and admin (proxied by nginx on container port 80)." Type="Port" Display="always" Required="true" Mask="false">8888</Config>
   <Config Name="App Data" Target="/data" Default="/mnt/user/appdata/video-ware" Mode="rw" Description="Persistent storage: PocketBase database, uploaded media, and the Redis queue." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/video-ware</Config>
   <Config Name="Admin Email" Target="POCKETBASE_ADMIN_EMAIL" Default="admin@example.com" Mode="" Description="Email for the auto-created PocketBase superuser." Type="Variable" Display="always" Required="true" Mask="false">admin@example.com</Config>
   <Config Name="Admin Password" Target="POCKETBASE_ADMIN_PASSWORD" Default="" Mode="" Description="Password for the auto-created PocketBase superuser. MUST be set to a strong value - leaving it at the default skips superuser creation." Type="Variable" Display="always" Required="true" Mask="true"></Config>

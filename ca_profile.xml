@@ -1,13 +1,12 @@
 <?xml version="1.0"?>
 <CommunityApplications>
   <Profile>
-    VideoWare is a self-hosted media upload and processing platform. This repository
-    provides a single, self-contained Unraid app (the monolithic image) that bundles
-    the Next.js web app, PocketBase database/API, the FFmpeg background worker, and an
-    internal Redis broker - everything runs in one container with one data path and one
-    port. Upload media, generate thumbnails and sprites, edit and render clips on a
-    timeline, and run AI video analysis. For questions, bug reports, and support, please
-    use the GitHub issue tracker.
+    VideoWare is a free, open-source video editor that runs entirely in your browser and on your server.
+    Upload media, create clips, edit timelines, and collaborate with other users on the same project
+    in real time. It's self-hosted: everything runs in one container with one data path. Optionally
+    enable Video Intelligence to unlock universal search across your media. This is an open alternative
+    to closed source video editing platforms. Supports local file storage or S3 object storage.
+    For questions, bug reports, and support, please use the GitHub issue tracker.
   </Profile>
   <Icon>https://raw.githubusercontent.com/make-ware/video-ware-ca/main/icon.png</Icon>
   <WebPage>https://github.com/make-ware-ca/video-ware</WebPage>
