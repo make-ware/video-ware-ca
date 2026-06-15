@@ -107,6 +107,13 @@ by what's actually in them (objects, faces, people, spoken words, shot changes) 
 to enable Google Cloud Video Intelligence. This is entirely optional. See the project README
 for details.
 
+### Exposing via Cloudflare Tunnel (cloudflared)
+
+VideoWare works behind a **Cloudflare Tunnel** (`cloudflared`), so you can expose it to the
+internet without opening ports on your firewall. Cloudflare proxies a request body size limit
+(100 MB on free plans), which normally blocks large media uploads — but VideoWare uploads files
+in **multipart (chunked) uploads**, keeping each chunk under that limit.
+
 ---
 
 ## Data, backups & updates
