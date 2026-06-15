@@ -13,20 +13,20 @@ universal search across your media (entirely optional).
 
 ---
 
-## ✨ Features
+## Features
 
-- 🌐 **Runs in your browser** — nothing to install on the client
-- 🤝 **Real-time collaboration** — multiple users editing the same project at once
-- 📤 **Upload media** with progress tracking and validation
-- ⚡ **Fast previews** — thumbnails and hover sprites generated in the background
-- ✂️ **Clip editing & timeline rendering** — compose and export final videos
-- 🎬 **FFmpeg-powered** transcoding and rendering, built in
-- 🔎 **Universal search** *(optional)* — enable Video Intelligence to find clips by what's actually in them
-- 💾 **Flexible storage** — local appdata by default, or any S3-compatible bucket
-- 🔐 **Built-in auth & API** via PocketBase, with a realtime database and admin UI
-- 🔓 **Free & open source**
+- **Runs in your browser** — nothing to install on the client
+- **Real-time collaboration** — multiple users editing the same project at once
+- **Upload media** with progress tracking and validation
+- **Fast previews** — thumbnails and hover sprites generated in the background
+- **Clip editing & timeline rendering** — compose and export final videos
+- **FFmpeg-powered** transcoding and rendering, built in
+- **Universal search** *(optional)* — enable Video Intelligence to find clips by what's actually in them
+- **Flexible storage** — local appdata by default, or any S3-compatible bucket
+- **Built-in auth & API** via PocketBase, with a realtime database and admin UI
+- **Free & open source**
 
-## 📦 What's inside the container
+## What's inside the container
 
 The monolithic image is fully self-contained. A single container runs:
 
@@ -42,7 +42,7 @@ You only ever map **one port** and **one volume**.
 
 ---
 
-## 🚀 Installation (Community Applications)
+## Installation (Community Applications)
 
 1. In Unraid, open the **Apps** tab (Community Applications).
 2. Search for **VideoWare** and click **Install**.
@@ -73,7 +73,7 @@ https://raw.githubusercontent.com/make-ware/video-ware-ca/main/templates/video-w
 
 ---
 
-## ⚙️ Configuration
+## Configuration
 
 These map to the fields shown in the Unraid template:
 
@@ -92,10 +92,10 @@ Set **Storage Type** to `s3` and add these variables (Add another Path, Port, Va
 
 | Variable                      | Required | Notes                                                          |
 | ----------------------------- | -------- | -------------------------------------------------------------- |
-| `STORAGE_S3_BUCKET`           | ✅       | Bucket name                                                    |
-| `STORAGE_S3_REGION`           | ✅       | e.g. `us-east-1` (use `garage` for Garage)                     |
-| `STORAGE_S3_ACCESS_KEY_ID`    | ✅       | Access key ID                                                  |
-| `STORAGE_S3_SECRET_ACCESS_KEY`| ✅       | Secret access key                                              |
+| `STORAGE_S3_BUCKET`           | Yes      | Bucket name                                                    |
+| `STORAGE_S3_REGION`           | Yes      | e.g. `us-east-1` (use `garage` for Garage)                     |
+| `STORAGE_S3_ACCESS_KEY_ID`    | Yes      | Access key ID                                                  |
+| `STORAGE_S3_SECRET_ACCESS_KEY`| Yes      | Secret access key                                              |
 | `STORAGE_S3_ENDPOINT`         |          | Defaults to `https://s3.<region>.amazonaws.com`                |
 | `STORAGE_S3_FORCE_PATH_STYLE` |          | `true` for MinIO/Garage-style endpoints                        |
 
@@ -109,7 +109,7 @@ for details.
 
 ---
 
-## 💾 Data, backups & updates
+## Data, backups & updates
 
 All persistent state lives under the single **App Data** mount (`/data`):
 
@@ -127,13 +127,13 @@ All persistent state lives under the single **App Data** mount (`/data`):
 
 ---
 
-## 🆘 Support & links
+## Support & links
 
 - **Issues / support:** https://github.com/make-ware/video-ware/issues
 - **Application source:** https://github.com/make-ware/video-ware
 - **Container image:** `ghcr.io/make-ware/video-ware:latest`
 
-## 📁 This repository
+## This repository
 
 This repo holds only the Unraid Community Applications metadata:
 
