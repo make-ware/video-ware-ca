@@ -9,7 +9,10 @@
     For questions, bug reports, and support, please use the GitHub issue tracker.
   </Profile>
   <Icon>https://raw.githubusercontent.com/make-ware/video-ware-ca/main/icon.png</Icon>
-  <WebPage>https://github.com/make-ware-ca/video-ware</WebPage>
+  <WebPage>https://github.com/make-ware/video-ware-ca</WebPage>
+  <Support>https://github.com/make-ware/video-ware/issues</Support>
+  <Project>https://github.com/make-ware/video-ware</Project>
+
   <!-- Optional support links -->
   <!-- <Forum>https://forums.unraid.net/topic/YOUR_SUPPORT_TOPIC</Forum> -->
 </CommunityApplications>

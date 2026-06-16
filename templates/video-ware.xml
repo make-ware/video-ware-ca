@@ -29,8 +29,8 @@ This template runs the **monolithic** image, which bundles all services in one c
 **Storage:** all persistent data (PocketBase DB, uploaded media, and the Redis queue) lives under the single `/data` mount, so the whole app is captured by one appdata path. Optional S3-compatible storage and Google Cloud Video Intelligence can be enabled via extra variables (see the project README).</Description>
   <Category>MediaApp:Video Tools:Utilities Productivity</Category>
   <WebUI>http://[IP]:[PORT:80]/</WebUI>
-  <TemplateURL>https://raw.githubusercontent.com/make-ware/video-ware/main/templates/video-ware.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/make-ware/video-ware/main/icon.png</Icon>
+  <TemplateURL>https://raw.githubusercontent.com/make-ware/video-ware-ca/main/templates/video-ware.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/make-ware/video-ware-ca/main/icon.png</Icon>
   <Screenshot>https://raw.githubusercontent.com/make-ware/video-ware-ca/main/images/video-ware-1.png</Screenshot>
   <Screenshot>https://raw.githubusercontent.com/make-ware/video-ware-ca/main/images/video-ware-2.png</Screenshot>
   <Screenshot>https://raw.githubusercontent.com/make-ware/video-ware-ca/main/images/video-ware-3.png</Screenshot>
