@@ -3,7 +3,7 @@
   <Profile>
     I publish free, open-source, self-hosted web applications. Starting with VideoWare, a 
     self-hosted, browser-based video editor for uploading media, creating clips, editing
-    timelines, and collaborating with other users in real time.
+    timelines, and collaborating with other users.
   </Profile>
   <Icon>https://raw.githubusercontent.com/make-ware/unraid-templates/main/profile.jpeg</Icon>
   <WebPage>https://makeware.io</WebPage>

@@ -9,8 +9,7 @@
   <Privileged>false</Privileged>
   <Support>https://github.com/make-ware/video-ware/issues</Support>
   <Project>https://github.com/make-ware/video-ware</Project>
-  <Overview>Self-contained web based video editor. Upload media, create clips, edit timelines, and collaborate with other users on the same project
-    in real time.</Overview>
+  <Overview>Self-contained web based video editor. Upload media, create clips, edit timelines, and collaborate with other users on the same project.</Overview>
   <Description>VideoWare is a free, open-source video editor that runs entirely in your browser and on your server.
     Upload media, create clips, edit timelines, and collaborate with other users on the same project
     in real time. It's self-hosted: everything runs in one container with one data path. Optionally
