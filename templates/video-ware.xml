@@ -9,8 +9,14 @@
   <Privileged>false</Privileged>
   <Support>https://github.com/make-ware/video-ware/issues</Support>
   <Project>https://github.com/make-ware/video-ware</Project>
-  <Overview>Self-contained media upload and processing platform. Upload media, get fast previews (thumbnails, sprites), edit and render clips on a timeline, and run AI video analysis (object/face/person detection, tracking, shot changes, speech transcription) using FFmpeg and optional Google Cloud APIs. This single container bundles everything it needs: the Next.js web app, PocketBase database/API, the background worker (FFmpeg), and Redis (the worker's job broker) - no external services required. S3-compatible storage and Google Cloud are optional add-ons.</Overview>
-  <Description>VideoWare is a modern, self-hosted media platform built with Next.js, PocketBase, and a NestJS background worker.&#xD;
+  <Overview>Self-contained web based video editor. Upload media, create clips, edit timelines, and collaborate with other users on the same project
+    in real time.</Overview>
+  <Description>VideoWare is a free, open-source video editor that runs entirely in your browser and on your server.
+    Upload media, create clips, edit timelines, and collaborate with other users on the same project
+    in real time. It's self-hosted: everything runs in one container with one data path. Optionally
+    enable Video Intelligence to unlock universal search across your media. This is an open alternative
+    to closed source video editing platforms. Supports local file storage or S3 object storage.
+    For questions, bug reports, and support, please use the GitHub issue tracker. &#xD;
 &#xD;
 This template runs the **monolithic** image, which bundles all services in one container:&#xD;
 - **Next.js web app** - upload, browse, edit, and render media&#xD;
